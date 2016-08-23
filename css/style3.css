@@ -1,0 +1,151 @@
+@font-face {
+    font-family: TrajanPro-Regular;
+    src: local(TrajanPro-Regular), url('/grafik/TrajanPro-Regular.ttf') format('opentype');
+}
+ 
+html, body{
+    width: 100%;
+    height: 100%;
+}
+ 
+body{
+    font-family: TrajanPro-Regular,arial,helvetica,sans-serif;
+    background:url("/grafik/bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center; 
+    background-attachment: fixed;
+    background-color: #0f0f0f;
+}
+
+.main{
+    position:relative; 
+    color: white;
+    top: 50px;  
+    background-color: #0f0f0f;
+    padding: 20px;
+    /*z-index: 2000;*/
+    min-height: 90%;
+    
+     
+} 
+
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin: 0;
+  border-radius: 0;
+}
+ 
+
+.navbar-center{
+  width: 730px;
+  margin: 0 auto;
+  display: block;
+   
+}
+
+.navbar-center ul li a:first{
+  margin-left: 0px;
+}
+
+.navbar-inverse{
+    width: 100%;
+    background-color: #0f0f0f;
+     
+}
+ 
+
+#navbarDiv ul li{
+    margin-right: 88px;  
+    color:white;
+    font-size:1.1em;
+    text-decoration: none; 
+}
+
+#navbarDiv ul li:last-child{
+    margin-right: 0px;  
+}
+
+#navbarDiv ul li a{
+    color:white;
+    padding: 0;
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+#navbarDiv ul li span:hover{
+    border-bottom: 3px solid white;
+}
+
+#socialLinks{
+    z-index:4;
+    background: url("/grafik/socialLinks.jpg");
+    width: 167px;
+    height: 40px;
+    background-size: contain;
+   
+}
+
+#socialLinks span{
+    position:relative;
+    float:left;
+    border: 0px solid white;
+    width: 38px;
+    height: 35px;
+    margin-left: 1px;
+    cursor: pointer;
+}
+
+#playYoutube{
+    position: absolute;
+    width: 119px;
+    height: 119px;
+    background: url("/grafik/Button_Play.png") no-repeat;
+    background-color: #0f0f0f;
+    left: 50% !important;
+    top: 50% !important;
+    margin-left: -59px;
+    margin-top: -59px; 
+}
+
+.height90{
+    height: 90% !important;
+}
+
+#closeYoutube{ 
+    position:absolute;
+    right:18px;
+    top: 57px;
+    text-align: center;
+    color:white;
+    font-weight:bold;
+    padding: 18px; 
+    font-size:30px;
+    background: url("/grafik/closebutton.png");
+    background-size: contain;
+    z-index: 300000000000000 !important;
+    background-repeat: no-repeat;
+    border: 0px solid yellow;
+}
+
+#iframe{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    /*min-width: 1024px;
+    min-height: 600px;*/
+    height: 100%;
+    z-index:5;
+    overflow: none;
+}
+ 
+ 
+ .navbar-nav > li > a {
+    padding-top:8px !important; 
+    padding-bottom:0 !important;
+    height: 45px;
+}
+.navbar {min-height:28px !important;}
+
+ 
