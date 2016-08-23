@@ -1,0 +1,137 @@
+@font-face {
+    font-family: TrajanPro-Regular;
+    src: local(TrajanPro-Regular), url('/grafik/TrajanPro-Regular.ttf') format('opentype');
+}
+ 
+
+/* For older browsers */
+nav, main, article {
+    display: block; 
+}
+
+body{
+   font-family: TrajanPro-Regular,arial,helvetica,sans-serif;
+   background:url("/grafik/bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center; 
+    background-attachment: fixed;
+    background-color: #0f0f0f;
+     
+}
+
+#iframe{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    min-width: 1024px;
+    min-height: 600px;
+    height: 100%;
+    z-index:5;
+    overflow: none;
+}
+ 
+
+main{
+    position:relative;
+    bottom:0px;
+    margin: 0 auto;
+    color: white;
+    top: 0px;
+    width: 700px;
+    border:0px solid white;
+    min-height: 85%;
+    background-color: #0f0f0f;
+    padding: 30px;
+    padding-left:29px;
+    padding-top: 100px;
+     
+}
+
+#playYoutube{
+    width: 119px;
+    height: 119px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: url("/grafik/Button_Play.png") no-repeat;
+    margin-left: -59px;
+    margin-top: -59px;
+    background-color: #0f0f0f;
+}
+
+#closeYoutube{
+    border: 0px solid yellow;
+    position:absolute;
+    right:17px;
+    top: 50px;
+    text-align: center;
+    color:white;
+    font-weight:bold;
+    padding: 11px;
+    font-size:30px;
+    background: url("/grafik/closebutton.png");
+    background-size: contain;
+    z-index: 10;
+    background-repeat: no-repeat;
+}
+
+nav{
+    position:fixed;
+    left: 0px;
+    top: 0px;
+    padding-top:20px;
+     
+    text-align:center;
+    width: 100%;
+    height: 40px;
+    border: 0px solid white;
+    z-index:1;
+    background-color: #0f0f0f;
+}
+
+nav a{
+    margin: 48px;  
+    color:white;
+    font:1.2em;
+    text-decoration: none; 
+    text-align:center;
+                    
+}
+
+nav a:hover{
+    border-bottom: 3px solid;
+}
+
+#contactDiv{
+    font: 12px arial;
+}
+
+#contactDiv a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#socialLinks{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    text-align:right;
+    z-index:4;
+    background: url("/grafik/socialLinks.jpg");
+    width: 167px;
+    height: 40px;
+    background-size: contain;
+}
+
+#socialLinks span{
+    position:relative;
+    float:left;
+    border: 0px solid white;
+    width: 38px;
+    height: 35px;
+    margin-left: 1px;
+    cursor: pointer;
+    
+}
