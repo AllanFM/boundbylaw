@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
-//import 404 from './pages/404';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Music from './pages/Music';

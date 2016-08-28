@@ -3,25 +3,21 @@ import YoutubeList from '../../services/videos.json';
 
 export default class Videos extends React.Component{
     renderVideos(){
-      //console.log(YoutubeList);
-      var text = "", url = "";
-      var x;
-      for (x in YoutubeList) {
+        var text = [], url = "", x;
+        for (x in YoutubeList) {
+            url = YoutubeList[x].url;
+            text[x]= <iframe key={x} width='560' height='315' src={url} frameBorder='0' allowFullScreen></iframe>
 
-          url = YoutubeList[x].url;
-          text += "<iframe width='560' height='315' src='" + url + "' frameborder='0' allowfullscreen></iframe>";
+        }
 
-      }
-      return text;
+        return text;
     }
 
     render(){
         return (
-          <div>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/JkRfp63MOjk" frameborder="0" allowfullscreen></iframe>
-
-              {this.renderVideos()}
-          </div>
+            <div>
+                 {this.renderVideos()}
+            </div>
         )
     }
 }
