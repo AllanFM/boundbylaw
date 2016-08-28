@@ -1,4 +1,5 @@
 import React from 'react';
+import { ResponsiveEmbed } from 'react-bootstrap';
 import YoutubeList from '../../services/videos.json';
 
 export default class Videos extends React.Component{
@@ -6,10 +7,10 @@ export default class Videos extends React.Component{
         var text = [], url = "", x;
         for (x in YoutubeList) {
             url = YoutubeList[x].url;
-            text[x]= <iframe key={x} width='560' height='315' src={url} frameBorder='0' allowFullScreen></iframe>
-
+            text[x] = <ResponsiveEmbed key={x} a16by9>
+                <embed src={url} />
+            </ResponsiveEmbed>
         }
-
         return text;
     }
 
